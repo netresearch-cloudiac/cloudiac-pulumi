@@ -53,4 +53,10 @@ $pulumi new azure-python
 pulumi up
 ```
 
+## remove the stack
+```shell
+pulumi destroy
+```
+
+
 
