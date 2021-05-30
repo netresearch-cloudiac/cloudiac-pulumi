@@ -4,11 +4,8 @@ import pulumi
 from pulumi_azure_native import storage
 from pulumi_azure_native import resources
 
-# Resource Group name
-RG_name = 'RG-pulumi-CICD'
-
 # Create an Azure Resource Group
-resource_group = resources.ResourceGroup(RG_name)
+resource_group = resources.ResourceGroup('resource_group')
 
 # Create an Azure resource (Storage Account)
 account = storage.StorageAccount('sa',
